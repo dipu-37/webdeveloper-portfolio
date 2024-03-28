@@ -211,14 +211,26 @@ footer{
 }
 
 @media screen and (max-width:576px) {
-   .skill-container , .resume-container , footer{
+   nav,.banner , .skill-container , .resume-container , footer, .about-info-container{
       flex-direction: column;
    }
-   #what-i-do-description{
+   nav{
+      margin: 0;
+   }
+   .profile-picture{
+      width: 100%;
+   }
+   .header{
+      background-image: none;
+   }
+   #what-i-do-description ,.banner{
       padding: 20px;
      }
-   footer{
+   footer , .about{
       padding: 10px ;
+   }
+   .btn-primary{
+      margin-bottom: 10px;
    }
    .footer-column {
       width: 100%;
