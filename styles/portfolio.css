@@ -126,7 +126,8 @@ text-align: center;
 }
 
 /* skill related style */
-.what-i-do-description{
+
+#what-i-do-description{
  padding: 30px 150px;
 }
 .skill-container{
@@ -200,4 +201,36 @@ footer{
 }
 .social-links a{
    margin-right: 25px;
+}
+
+
+
+/* mobile device */
+.hide{
+   display: none;
+}
+
+@media screen and (max-width:576px) {
+   .skill-container , .resume-container , footer{
+      flex-direction: column;
+   }
+   #what-i-do-description{
+      padding: 20px;
+     }
+   footer{
+      padding: 10px ;
+   }
+   .footer-column {
+      width: 100%;
+   }
+   .contact input[type="text"], .contact input[type="email"], textarea {
+      /* padding: 18px 0; */
+      width: 80%;
+   }
+}
+
+@media screen and (min-width:576px) and (max-width:960px) {
+   footer{
+      padding: 30px ;
+   }
 }
